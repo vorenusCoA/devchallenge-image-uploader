@@ -1,1 +1,51 @@
-<p>home works!</p>
+<div *ngIf="showInitContainer" class="init-container">
+
+    <h1 class="uploadHeader">Upload your image</h1>
+    <p class="fileTypes">File should be Jpeg, Png,...</p>
+
+    <div class="image-up-container" [ngClass]="{'drag-over': isDragOver}" (dragover)="onDragOver($event)"
+        (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
+
+        <img class="imagePlaceholder" src="/assets/imagePlaceholder.svg" alt="an image of a mountain">
+        <p class="dragAndDrop">Drag & Drop your image here</p>
+
+    </div>
+
+    <p class="or">Or</p>
+
+    <div class="chooseAFileDiv">
+        <label for="chooseAFileBtn" class="chooseAFileBtn">Choose a File</label>
+        <input hidden id="chooseAFileBtn" type="file" accept="image/*" #fileInput (click)="fileInput.value = ''"
+            (change)="onFileChoosen($event)">
+    </div>
+
+</div>
+
+<div class="uploading-container" *ngIf="showUploadingContainer">
+
+    <h1 class="uploading">Uploading...</h1>
+    <mat-progress-bar class="progress-bar" mode="determinate" value={{uploadProgress}}></mat-progress-bar>
+
+</div>
+
+<div class="confirmation-container" *ngIf="showConfirmationContainer">
+
+    <span class="material-symbols-outlined checkCircle">check_circle</span>
+    <h1 class="successHeader">Uploaded Successfully!</h1>
+    <div class="uploadedImageDiv">
+        <img src={{uploadedImageLocation}} alt="" class="uploadedImage">
+    </div>
+    <div class="imageShareLinkDivContainer">
+        <div class="imageShareLinkDiv">
+            <p class="imageShareLink">{{uploadedImageLocation}}</p>
+            <button class="copyLinkBtn" (click)="copyToClipboard()">Copy Link</button>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>created by <span><a href="https://github.com/vorenusCoA" target="_blank" class="githubLink">vorenusCoA</a></span>
+        - <span><a href="https://devchallenges.io" target="_blank" class="devChallengesLink">devChallenges.io</a></span>
+    </p>
+</footer>

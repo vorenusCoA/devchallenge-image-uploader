@@ -1,0 +1,188 @@
+:host {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.init-container,
+.uploading-container,
+.confirmation-container {
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    max-width: 400px;
+}
+
+.uploading-container {
+    text-align: left;
+}
+
+.uploadHeader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4F4F4F;
+    margin-top: 36px;
+}
+
+.fileTypes {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #828282;
+}
+
+.errorMessage {
+    min-height: 15px;
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.image-up-container {
+    border-radius: 12px;
+    border: 1px dashed #97BEF4;
+    background: #F6F8FB;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.drag-over {
+    background-color: #b8bbbe;
+}
+
+.imagePlaceholder {
+    margin: 36px 112px 0px;
+}
+
+.dragAndDrop {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    color: #BDBDBD;
+}
+
+.or {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    margin-top: 19px;
+    margin-bottom: 0px;
+    color: #BDBDBD;
+}
+
+.chooseAFileDiv {
+    margin-top: 22px;
+    margin-bottom: 36px;
+}
+
+.chooseAFileBtn {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #2F80ED;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.chooseAFileBtn:hover {
+    background-color: #2369c8;
+}
+
+.uploading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4F4F4F;
+    margin-top: 36px;
+    margin-left: 32px;
+    margin-bottom: 0px;
+}
+
+.mat-progress-bar {
+    margin: 32px 32px 44px;
+    width: auto;
+}
+
+.material-symbols-outlined {
+    margin-top: 36px;
+    color: green;
+    font-size: 42px;
+}
+
+.successHeader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4F4F4F;
+    margin-top: 8px;
+}
+
+.uploadedImageDiv {
+    border-radius: 12px;
+    margin: 25px 32px;
+    width: 338px;
+    height: 225px;
+}
+
+.uploadedImage {
+    width: 100%;
+}
+
+.imageShareLinkDivContainer {
+    width: 100%;
+}
+
+.imageShareLinkDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--gray-5, #E0E0E0);
+    background: #F6F8FB;
+    margin: 32px;
+}
+
+.imageShareLink {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    color: #4F4F4F;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.copyLinkBtn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #2F80ED;
+    border-radius: 8px;
+    border: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #A9A9A9;
+}
+
+.devChallengesLink,
+.githubLink {
+    text-decoration: none;
+    color: inherit;
+}
